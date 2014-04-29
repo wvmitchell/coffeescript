@@ -21,5 +21,7 @@ class Bst
       @left.each(collect) + collect(@data)
     else if @left == null
       collect(@data) + @right.each(collect)
+    else
+      @left.each(collect) + collect(@data) + @right.each(collect)
 
 module.exports = Bst
