@@ -25,7 +25,7 @@ describe "Bob", ->
     result = bob.hey "WHAT THE HELL WERE YOU THINKING?"
     expect(result).toEqual "Woah, chill out!"
 
-  xit "shouting numbers", ->
+  it "shouting numbers", ->
     result = bob.hey "1, 2, 3 GO!"
     expect(result).toEqual "Woah, chill out!"
 
