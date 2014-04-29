@@ -8,7 +8,7 @@ describe 'binary', ->
   it '10 is decimal 2', ->
     expect(new Binary('10').toDecimal()).toEqual 2
 
-  xit '11 is decimal 3', ->
+  it '11 is decimal 3', ->
     expect(new Binary('11').toDecimal()).toEqual 3
 
   xit '100 is decimal 4', ->
