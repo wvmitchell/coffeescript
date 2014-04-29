@@ -10,7 +10,7 @@ describe "Anagram", ->
     matches = detector.match ["tan", "stand", "at"]
     expect(matches).toEqual ["tan"]
 
-  xit "does not detect false positives", ->
+  it "does not detect false positives", ->
     detector = new Anagram "galea"
     matches = detector.match ["eagle"]
     expect(matches).toEqual []
