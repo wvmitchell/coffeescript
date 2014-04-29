@@ -45,7 +45,7 @@ describe "Anagram", ->
     matches = detector.match ["last"]
     expect(matches).toEqual []
 
-  xit "detects anagrams using case-insensitive subject", ->
+  it "detects anagrams using case-insensitive subject", ->
     detector = new Anagram "Orchestra"
     matches = detector.match ["cashregister", "carthorse", "radishes"]
     expect(matches).toEqual ["carthorse"]

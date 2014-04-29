@@ -1,6 +1,8 @@
 class Anagram
 
-  constructor: (@word) ->
+  constructor: (word) ->
+    @word = word.toLowerCase()
+
   match: (potentialMatches) ->
     matches = (pm for pm in potentialMatches when anagram(pm, @word))
 
