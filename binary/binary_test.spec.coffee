@@ -5,7 +5,7 @@ describe 'binary', ->
   it '1 is decimal 1', ->
     expect(new Binary('1').toDecimal()).toEqual 1
 
-  xit '10 is decimal 2', ->
+  it '10 is decimal 2', ->
     expect(new Binary('10').toDecimal()).toEqual 2
 
   xit '11 is decimal 3', ->
