@@ -13,7 +13,7 @@ describe "Bob", ->
     result = bob.hey "Does this cryogenic chamber make me look fat?"
     expect(result).toEqual "Sure."
 
-  xit "talking forcefully", ->
+  it "talking forcefully", ->
     result = bob.hey "Let's go make out behind the gym!"
     expect(result).toEqual "Whatever."
 
