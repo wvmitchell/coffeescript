@@ -21,7 +21,7 @@ describe "Bob", ->
     result = bob.hey "It's OK if you don't want to go to the DMV."
     expect(result).toEqual "Whatever."
 
-  xit "forceful questions", ->
+  it "forceful questions", ->
     result = bob.hey "WHAT THE HELL WERE YOU THINKING?"
     expect(result).toEqual "Woah, chill out!"
 
