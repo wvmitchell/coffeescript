@@ -1,7 +1,13 @@
 class Anagram
 
-  constructor: (word) ->
+  constructor: (@word) ->
   match: (potentialMatches) ->
-    []
+    matches = (pm for pm in potentialMatches when anagram(pm, @word))
+
+  anagram = (first, second) ->
+    sorted(first) == sorted(second)
+
+  sorted = (word) ->
+    word.split('').sort().join('')
 
 module.exports = Anagram

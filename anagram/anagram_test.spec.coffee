@@ -5,7 +5,7 @@ describe "Anagram", ->
     matches = detector.match ["hello", "world", "zombies", "pants"]
     expect(matches).toEqual []
 
-  xit "detects simple anagram", ->
+  it "detects simple anagram", ->
     detector = new Anagram "ant"
     matches = detector.match ["tan", "stand", "at"]
     expect(matches).toEqual ["tan"]
