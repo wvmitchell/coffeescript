@@ -4,9 +4,10 @@ class Anagram
     @word = word.toLowerCase()
 
   match: (potentialMatches) ->
-    matches = (pm for pm in potentialMatches when anagram(pm, @word))
+    matches = (pm.toLowerCase() for pm in potentialMatches when anagram(pm, @word))
 
   anagram = (first, second) ->
+    first = first.toLowerCase()
     sorted(first) == sorted(second) && first != second
 
   sorted = (word) ->
