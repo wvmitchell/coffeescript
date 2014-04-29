@@ -15,7 +15,7 @@ describe "Anagram", ->
     matches = detector.match ["eagle"]
     expect(matches).toEqual []
 
-  xit "detects multiple anagrams", ->
+  it "detects multiple anagrams", ->
     detector = new Anagram "master"
     matches = detector.match ["stream", "pigeon", "maters"]
     expect(matches).toEqual ["stream", "maters"]
