@@ -1,7 +1,5 @@
 class Bob
 
-  constructor: (@cons="hello") ->
-
   hey: (statement) ->
     if silence(statement)
       "Fine. Be that way!"
