@@ -30,7 +30,7 @@ describe "Anagram", ->
     matches = detector.match ["enlists", "google", "inlets", "banana"]
     expect(matches).toEqual ["inlets"]
 
-  xit "detects multiple anagrams", ->
+  it "detects multiple anagrams", ->
     detector = new Anagram "allergy"
     matches = detector.match ["gallery", "ballerina", "regally", "clergy", "largely", "leading"]
     expect(matches).toEqual ["gallery", "regally", "largely"]
