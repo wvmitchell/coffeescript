@@ -1,7 +1,9 @@
 class Bob
 
   hey: (statement) ->
-    if shouting(statement)
+    if silence(statement)
+      "Fine. Be that way!"
+    else if shouting(statement)
       "Woah, chill out!"
     else if question(statement)
       "Sure."
@@ -13,5 +15,8 @@ class Bob
 
   question = (statement) ->
     statement[statement.length-1] == "?"
+
+  silence = (statement) ->
+    "" == statement.trim()
 
 module.exports = Bob
