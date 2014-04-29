@@ -6,7 +6,7 @@ describe "Beer", ->
     Take one down and pass it around, 7 bottles of beer on the wall.
     """
 
-  xit "handles 1 bottle", ->
+  it "handles 1 bottle", ->
     expect(Beer.verse 1).toEqual """
     1 bottle of beer on the wall, 1 bottle of beer.
     Take it down and pass it around, no more bottles of beer on the wall.
