@@ -8,6 +8,9 @@ class Beer
     else
       regularVerse(num)
 
+  @sing: (start, finish) ->
+    (@verse(num) for num in [start..finish]).join("\n\n") + "\n"
+
   regularVerse = (num) ->
     """
     #{num} bottles of beer on the wall, #{num} bottles of beer.
