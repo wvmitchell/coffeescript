@@ -35,7 +35,7 @@ describe "Anagram", ->
     matches = detector.match ["gallery", "ballerina", "regally", "clergy", "largely", "leading"]
     expect(matches).toEqual ["gallery", "regally", "largely"]
 
-  xit "does not detect identical words", ->
+  it "does not detect identical words", ->
     detector = new Anagram "corn"
     matches = detector.match ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
     expect(matches).toEqual ["cron"]

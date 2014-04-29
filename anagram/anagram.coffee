@@ -5,7 +5,7 @@ class Anagram
     matches = (pm for pm in potentialMatches when anagram(pm, @word))
 
   anagram = (first, second) ->
-    sorted(first) == sorted(second)
+    sorted(first) == sorted(second) && first != second
 
   sorted = (word) ->
     word.split('').sort().join('')
