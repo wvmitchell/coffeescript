@@ -10,6 +10,6 @@ class Binary
     result
 
   clean = (raw) ->
-    if /[a-zA-Z]/.test(raw) then '0' else raw
+    if /[a-zA-Z2-9]/.test(raw) then '0' else raw
 
 module.exports = Binary
