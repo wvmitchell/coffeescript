@@ -48,7 +48,7 @@ describe 'BinarySearchTree', ->
     expect(four.right.left.data).toEqual 5
     expect(four.right.right.data).toEqual 7
 
-  xit 'iterating one element', ->
+  it 'iterating one element', ->
     expect(recordAllData(new Bst(4))).toEqual [4]
 
   xit 'iterating over smaller element', ->

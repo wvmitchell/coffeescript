@@ -14,4 +14,7 @@ class Bst
       else
         @right.insert(num)
 
+  each: (collection) ->
+    collection(@data)
+
 module.exports = Bst
