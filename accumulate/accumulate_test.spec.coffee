@@ -16,13 +16,13 @@ describe '[].accumulate()', ->
 
     expect(result).toEqual ['HELLO', 'WORLD']
 
-  xit 'accumulate reversed strings', ->
+  it 'accumulate reversed strings', ->
     accumulator = (word) -> word.split('').reverse().join('')
     result      = 'the quick brown fox etc'.split(/\s/).accumulate accumulator
 
     expect(result).toEqual ["eht", "kciuq", "nworb", "xof", "cte"]
 
-  xit 'accumulate recursively', ->
+  it 'accumulate recursively', ->
     result = 'a b c'.split(/\s+/).accumulate (char)  ->
       '1 2 3'.split(/\s+/).accumulate (digit) -> "#{char}#{digit}"
 
