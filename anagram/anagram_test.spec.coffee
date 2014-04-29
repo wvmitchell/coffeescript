@@ -20,7 +20,7 @@ describe "Anagram", ->
     matches = detector.match ["stream", "pigeon", "maters"]
     expect(matches).toEqual ["stream", "maters"]
 
-  xit "does not detect anagram subsets", ->
+  it "does not detect anagram subsets", ->
     detector = new Anagram "good"
     matches = detector.match ["dog", "goody"]
     expect(matches).toEqual []
