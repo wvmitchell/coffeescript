@@ -41,7 +41,7 @@ describe "Bob", ->
     result = bob.hey "Ending with a ? means a question."
     expect(result).toEqual "Whatever."
 
-  xit "prattling on", ->
+  it "prattling on", ->
     result = bob.hey "Wait! Hang on.  Are you going to be OK?"
     expect(result).toEqual "Sure."
 
