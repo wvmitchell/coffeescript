@@ -4,9 +4,14 @@ class Bst
 
   insert: (num) ->
     if num <= @data
-      if @left == null 
+      if @left == null
         @left = new Bst(num)
       else
         @left.insert(num)
+    else
+      if @right == null
+        @right = new Bst(num)
+      else
+        @right.insert(num)
 
 module.exports = Bst

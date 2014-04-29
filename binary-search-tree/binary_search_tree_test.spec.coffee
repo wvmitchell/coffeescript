@@ -24,7 +24,7 @@ describe 'BinarySearchTree', ->
     expect(four.data).toEqual 4
     expect(four.left.data).toEqual 4
 
-  xit 'inserting right', ->
+  it 'inserting right', ->
     four = new Bst(4)
     four.insert(5)
 
