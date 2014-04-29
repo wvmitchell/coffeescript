@@ -57,7 +57,7 @@ describe 'BinarySearchTree', ->
 
     expect(recordAllData(four)).toEqual [2, 4]
 
-  xit 'iterating over larger element', ->
+  it 'iterating over larger element', ->
     four = new Bst(4)
     four.insert(5)
 

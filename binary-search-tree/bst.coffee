@@ -15,9 +15,11 @@ class Bst
         @right.insert(num)
 
   each: (collect) ->
-    if @left == null
+    if @left == null == @right
       collect(@data)
-    else
+    else if @right == null
       @left.each(collect) + collect(@data)
+    else if @left == null
+      collect(@data) + @right.each(collect)
 
 module.exports = Bst
