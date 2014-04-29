@@ -1,5 +1,7 @@
 class Bob
 
+  constructor: (@cons="hello") ->
+
   hey: (statement) ->
     if silence(statement)
       "Fine. Be that way!"
@@ -16,7 +18,7 @@ class Bob
   question = (statement) ->
     statement[statement.length-1] == "?"
 
-  silence = (statement) ->
+  silence = (statement) =>
     "" == statement.trim()
 
 module.exports = Bob

@@ -49,6 +49,6 @@ describe "Bob", ->
     result = bob.hey ""
     expect(result).toEqual "Fine. Be that way!"
 
-  xit "prolonged silence", ->
+  it "prolonged silence", ->
     result = bob.hey "   "
     expect(result).toEqual "Fine. Be that way!"
