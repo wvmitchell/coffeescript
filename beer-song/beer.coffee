@@ -8,7 +8,7 @@ class Beer
     else
       regularVerse(num)
 
-  @sing: (start, finish) ->
+  @sing: (start, finish=0) ->
     (@verse(num) for num in [start..finish]).join("\n\n") + "\n"
 
   regularVerse = (num) ->
