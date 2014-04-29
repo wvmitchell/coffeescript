@@ -23,5 +23,5 @@ describe 'binary', ->
   it '10001101000 is decimal 1128', ->
     expect(new Binary('10001101000').toDecimal()).toEqual 1128
 
-  xit 'carrot is decimal 0', ->
+  it 'carrot is decimal 0', ->
     expect(new Binary('carrot').toDecimal()).toEqual 0
