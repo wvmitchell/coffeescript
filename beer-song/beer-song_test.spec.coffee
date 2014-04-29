@@ -31,7 +31,7 @@ describe "Beer", ->
 
     """
 
-  xit "sings the rest of the verses", ->
+  it "sings the rest of the verses", ->
     expect(Beer.sing 3).toEqual """
     3 bottles of beer on the wall, 3 bottles of beer.
     Take one down and pass it around, 2 bottles of beer on the wall.
