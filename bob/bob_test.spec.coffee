@@ -33,7 +33,7 @@ describe "Bob", ->
     result = bob.hey "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"
     expect(result).toEqual "Woah, chill out!"
 
-  xit "shouting with no exclamation mark", ->
+  it "shouting with no exclamation mark", ->
     result = bob.hey "I HATE YOU"
     expect(result).toEqual "Woah, chill out!"
 
