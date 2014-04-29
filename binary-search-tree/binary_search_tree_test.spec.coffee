@@ -10,7 +10,7 @@ describe 'BinarySearchTree', ->
   it 'data is retained', ->
     expect(4).toEqual new Bst(4).data
 
-  xit 'inserting less', ->
+  it 'inserting less', ->
     four = new Bst(4)
     four.insert(2)
 
