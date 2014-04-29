@@ -40,7 +40,7 @@ describe "Anagram", ->
     matches = detector.match ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
     expect(matches).toEqual ["cron"]
 
-  xit "does not detect non-anagrams with identical checksum", ->
+  it "does not detect non-anagrams with identical checksum", ->
     detector = new Anagram "mass"
     matches = detector.match ["last"]
     expect(matches).toEqual []
