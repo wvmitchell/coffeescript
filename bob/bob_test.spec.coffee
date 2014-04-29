@@ -37,7 +37,7 @@ describe "Bob", ->
     result = bob.hey "I HATE YOU"
     expect(result).toEqual "Woah, chill out!"
 
-  xit "statement containing question mark", ->
+  it "statement containing question mark", ->
     result = bob.hey "Ending with a ? means a question."
     expect(result).toEqual "Whatever."
 
