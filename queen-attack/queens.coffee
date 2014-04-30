@@ -20,6 +20,10 @@ class Queens
     board.join("\n").replace(/,/g, " ")
 
 
+  canAttack: ->
+    false
+
+
   equalArrays = (first, second) ->
     first.length == second.length and first.every (elem, i) -> elem is second[i]
 
