@@ -26,7 +26,7 @@ describe 'Word Problem', ->
     problem = new WordProblem('What is -3 multiplied by 25?')
     expect(problem.answer()).toEqual -75
 
-  xit 'divide', ->
+  it 'divide', ->
     problem = new WordProblem('What is 33 divided by -3?')
     expect(problem.answer()).toEqual -11
 
