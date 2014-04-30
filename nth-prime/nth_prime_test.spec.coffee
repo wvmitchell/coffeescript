@@ -18,7 +18,7 @@ describe 'Prime', ->
     prime = Prime.nth(10001)
     expect(prime).toEqual(104743)
 
-  xit 'weird case', ->
+  it 'weird case', ->
     try
       Prime.nth(0)
     catch error
