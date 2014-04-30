@@ -14,11 +14,11 @@ describe 'Word Problem', ->
     problem = new WordProblem('What is -1 plus -10?')
     expect(problem.answer()).toEqual -11
 
-  xit 'add more digits', ->
+  it 'add more digits', ->
     problem = new WordProblem('What is 123 plus 45678?')
     expect(problem.answer()).toEqual 45801
 
-  xit 'subtract', ->
+  it 'subtract', ->
     problem = new WordProblem('What is 4 minus -12?')
     expect(problem.answer()).toEqual 16
 

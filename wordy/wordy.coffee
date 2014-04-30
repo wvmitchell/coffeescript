@@ -2,7 +2,7 @@ class WordProblem
 
   constructor: (@question) ->
     numbers = @question.match(/-?\d+/g)
-    operations = @question.match(/plus/g)
+    operations = @question.match(/(plus|minus)/g)
     @commandList = build(numbers, operations)
 
   answer: ->
@@ -19,6 +19,7 @@ class WordProblem
   parsed = (operation) ->
     switch operation
       when 'plus' then '+'
+      when 'minus' then '-'
       else ''
 
 
