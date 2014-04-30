@@ -10,7 +10,7 @@ describe 'Word Problem', ->
     problem = new WordProblem('What is 53 plus 2?')
     expect(problem.answer()).toEqual 55
 
-  xit 'add negative numbers', ->
+  it 'add negative numbers', ->
     problem = new WordProblem('What is -1 plus -10?')
     expect(problem.answer()).toEqual -11
 

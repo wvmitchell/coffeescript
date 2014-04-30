@@ -1,7 +1,7 @@
 class WordProblem
 
   constructor: (@question) ->
-    numbers = @question.match(/\d+/g)
+    numbers = @question.match(/-?\d+/g)
     operations = @question.match(/plus/g)
     @commandList = build(numbers, operations)
 
