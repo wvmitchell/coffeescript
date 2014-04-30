@@ -6,7 +6,7 @@ describe 'Word Problem', ->
     problem = new WordProblem('What is 1 plus 1?')
     expect(problem.answer()).toEqual 2
 
-  xit 'add 2', ->
+  it 'add 2', ->
     problem = new WordProblem('What is 53 plus 2?')
     expect(problem.answer()).toEqual 55
 
