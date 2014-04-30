@@ -30,14 +30,14 @@ describe "Hexadecimal", ->
     hex = new Hexadecimal("carrot")
     expect(hex.toDecimal()).toEqual(0)
 
-  xit "black", ->
+  it "black", ->
     hex = new Hexadecimal("000000")
     expect(hex.toDecimal()).toEqual(0)
 
-  xit "white", ->
+  it "white", ->
     hex = new Hexadecimal("ffffff")
     expect(hex.toDecimal()).toEqual(16777215)
 
-  xit "yellow", ->
+  it "yellow", ->
     hex = new Hexadecimal("ffff00")
     expect(hex.toDecimal()).toEqual(16776960)
