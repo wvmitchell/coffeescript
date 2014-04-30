@@ -14,7 +14,7 @@ describe 'Prime', ->
     prime = Prime.nth(6)
     expect(prime).toEqual(13)
 
-  xit 'big prime', ->
+  it 'big prime', ->
     prime = Prime.nth(10001)
     expect(prime).toEqual(104743)
 
