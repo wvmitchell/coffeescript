@@ -6,31 +6,31 @@ describe 'Luhn', ->
     luhn = new Luhn(34567)
     expect(luhn.checkDigit).toEqual(7)
 
-  xit "check digit again", ->
+  it "check digit again", ->
     luhn = new Luhn(91370)
     expect(luhn.checkDigit).toEqual(0)
 
-  xit "addends", ->
+  it "addends", ->
     luhn = new Luhn(12121)
     expect(luhn.addends).toEqual([1, 4, 1, 4, 1])
 
-  xit "too large added", ->
+  it "too large added", ->
     luhn = new Luhn(8631)
     expect(luhn.addends).toEqual([7, 6, 6, 1])
 
-  xit "checksum", ->
+  it "checksum", ->
     luhn = new Luhn(4913)
     expect(luhn.checksum).toEqual(22)
 
-  xit "checksum again", ->
+  it "checksum again", ->
     luhn = new Luhn(201773)
     expect(luhn.checksum).toEqual(21)
 
-  xit "valid number", ->
+  it "valid number", ->
     luhn = new Luhn(738)
     expect(luhn.valid).toEqual(false)
 
-  xit "invalid number", ->
+  it "invalid number", ->
     luhn = new Luhn(8739567)
     expect(luhn.valid).toEqual(true)
 
