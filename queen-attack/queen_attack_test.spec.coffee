@@ -28,7 +28,7 @@ describe "Queens", ->
       "O O W O O O O O\nO O O O O O O O\nO O O O O O B O\nO O O O O O O O"
     expect(queens.toString()).toEqual(board)
 
-  xit "queens cannot attack", ->
+  it "queens cannot attack", ->
     queens = new Queens({ white: [2,3], black: [4,7] })
     expect(queens.canAttack()).toEqual(false)
 
