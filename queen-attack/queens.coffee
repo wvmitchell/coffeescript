@@ -29,9 +29,7 @@ class Queens
   blankBoard = ->
     board = []
     for i in [0..7]
-      board[i] = []
-      for j in [0..7]
-        board[i].push 'O'
+      board[i] = ['O','O','O','O','O','O','O','O']
     board
 
   equalArrays = (first, second) ->
