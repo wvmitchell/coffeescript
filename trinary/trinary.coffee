@@ -1,6 +1,8 @@
 class Trinary
 
+  constructor: (@trinary) ->
+
   toDecimal: ->
-    1
+    parseInt @trinary
 
 module.exports = Trinary

@@ -5,7 +5,7 @@ describe 'Trinary', ->
   it '1 is decimal 1', ->
     expect(new Trinary('1').toDecimal()).toEqual 1
 
-  xit '2 is decimal 2', ->
+  it '2 is decimal 2', ->
     expect(new Trinary('2').toDecimal()).toEqual 2
 
   xit '10 is decimal 3', ->
