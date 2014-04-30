@@ -7,16 +7,9 @@ class Queens
 
 
   toString: ->
-    board = []
-    for i in [0..7]
-      board[i] = []
-      for j in [0..7]
-        if equalArrays([j,i], @white)
-          board[i].push 'W'
-        else if equalArrays([j,i], @black)
-          board[i].push 'B'
-        else
-          board[i].push 'O'
+    board = blankBoard()
+    board[@white[1]][@white[0]] = 'W'
+    board[@black[1]][@black[0]] = 'B'
     board.join("\n").replace(/,/g, " ")
 
 
@@ -35,6 +28,14 @@ class Queens
 
   diaAttack = (white, black) ->
     Math.abs(white[0] - black[0]) == Math.abs(white[1] - black[1])
+
+  blankBoard = ->
+    board = []
+    for i in [0..7]
+      board[i] = []
+      for j in [0..7]
+        board[i].push 'O'
+    board
 
 
   equalArrays = (first, second) ->
