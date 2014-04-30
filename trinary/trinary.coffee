@@ -3,7 +3,8 @@ class Trinary
   constructor: (@trinary) ->
 
   toDecimal: ->
-    convert(@trinary)
+    result = convert(@trinary)
+    if isNaN(result) then 0 else result
 
   convert = (stringNum) ->
     result = 0
