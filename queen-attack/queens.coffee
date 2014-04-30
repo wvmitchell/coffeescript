@@ -21,7 +21,9 @@ class Queens
 
 
   canAttack: ->
-    rowAttack(@white, @black) || colAttack(@white, @black)
+    rowAttack(@white, @black) ||
+    colAttack(@white, @black) ||
+    diaAttack(@white, @black)
 
 
   rowAttack = (white, black) ->
@@ -30,6 +32,9 @@ class Queens
 
   colAttack = (white, black) ->
     white[1] == black[1]
+
+  diaAttack = (white, black) ->
+    Math.abs(white[0] - black[0]) == Math.abs(white[1] - black[1])
 
 
   equalArrays = (first, second) ->

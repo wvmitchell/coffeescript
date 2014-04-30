@@ -43,7 +43,7 @@ describe "Queens", ->
     expect(queens.canAttack()).toEqual(true)
 
 
-  xit "queens can attack diagonally", ->
+  it "queens can attack diagonally", ->
     queens = new Queens({ white: [1, 1], black: [6, 6] })
     expect(queens.canAttack()).toEqual(true)
 
