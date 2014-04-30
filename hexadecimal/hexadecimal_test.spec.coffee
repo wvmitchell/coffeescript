@@ -14,19 +14,19 @@ describe "Hexadecimal", ->
     hex = new Hexadecimal("10")
     expect(hex.toDecimal()).toEqual(16)
 
-  xit "hex af is decimal 175", ->
+  it "hex af is decimal 175", ->
     hex = new Hexadecimal("af")
     expect(hex.toDecimal()).toEqual(175)
 
-  xit "hex 100 is decimal 256", ->
+  it "hex 100 is decimal 256", ->
     hex = new Hexadecimal("100")
     expect(hex.toDecimal()).toEqual(256)
 
-  xit "hex 19ace is decimal 105166", ->
+  it "hex 19ace is decimal 105166", ->
     hex = new Hexadecimal("19ace")
     expect(hex.toDecimal()).toEqual(105166)
 
-  xit "invalid hex is decimal 0", ->
+  it "invalid hex is decimal 0", ->
     hex = new Hexadecimal("carrot")
     expect(hex.toDecimal()).toEqual(0)
 
