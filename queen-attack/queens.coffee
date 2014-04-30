@@ -21,7 +21,15 @@ class Queens
 
 
   canAttack: ->
-    false
+    rowAttack(@white, @black) || colAttack(@white, @black)
+
+
+  rowAttack = (white, black) ->
+    white[0] == black[0]
+
+
+  colAttack = (white, black) ->
+    white[1] == black[1]
 
 
   equalArrays = (first, second) ->
