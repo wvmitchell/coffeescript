@@ -6,7 +6,7 @@ describe "Hexadecimal", ->
     hex = new Hexadecimal("1")
     expect(hex.toDecimal()).toEqual(1)
 
-  xit "hex c is decimal 12", ->
+  it "hex c is decimal 12", ->
     hex = new Hexadecimal("c")
     expect(hex.toDecimal()).toEqual(12)
 
