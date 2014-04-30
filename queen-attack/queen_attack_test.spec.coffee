@@ -21,7 +21,7 @@ describe "Queens", ->
       expect(error).toEqual("Queens cannot share the same space")
 
 
-  xit "toString representation", ->
+  it "toString representation", ->
     positioning = {white: [2, 4], black: [6, 6]}
     queens = new Queens(positioning)
     board = "O O O O O O O O\nO O O O O O O O\nO O O O O O O O\nO O O O O O O O\n" +
