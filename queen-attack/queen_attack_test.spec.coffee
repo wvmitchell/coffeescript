@@ -48,16 +48,16 @@ describe "Queens", ->
     expect(queens.canAttack()).toEqual(true)
 
 
-  xit "queens can attack another diagonally", ->
+  it "queens can attack another diagonally", ->
     queens = new Queens({ white: [0, 6], black: [1, 7] })
     expect(queens.canAttack()).toEqual(true)
 
 
-  xit "queens can attack yet another diagonally", ->
+  it "queens can attack yet another diagonally", ->
     queens = new Queens({ white: [4, 1], black: [6, 3] })
     expect(queens.canAttack()).toEqual(true)
 
-  xit "queens can attack yet yet another diagonally", ->
+  it "queens can attack yet yet another diagonally", ->
     queens = new Queens({ white: [6, 1], black: [1, 6] })
     expect(queens.canAttack()).toEqual(true)
 
