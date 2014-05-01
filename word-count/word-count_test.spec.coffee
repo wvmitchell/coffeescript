@@ -6,7 +6,7 @@ describe "Words", ->
     expect(words.count).toEqual
       word: 1
 
-  xit "counts one of each", ->
+  it "counts one of each", ->
     words = new Words "one of each"
     expect(words.count).toEqual
       one: 1
