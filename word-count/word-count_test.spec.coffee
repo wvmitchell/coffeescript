@@ -31,7 +31,7 @@ describe "Words", ->
       java: 1
       javascript: 1
 
-  xit "includes numbers", ->
+  it "includes numbers", ->
     words = new Words "testing, 1, 2 testing"
     expect(words.count).toEqual
       testing: 2

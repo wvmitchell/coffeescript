@@ -12,7 +12,7 @@ class Words
     results
 
   clean = (phrase) ->
-    cleaned = phrase.replace /[^a-zA-Z ]/g, ""
+    cleaned = phrase.replace /[^0-9a-zA-Z ]/g, ""
     cleaned = cleaned.replace /\s{2,}/g, " "
 
 module.exports = Words
