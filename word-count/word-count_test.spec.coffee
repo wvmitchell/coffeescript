@@ -38,7 +38,7 @@ describe "Words", ->
       1: 1
       2: 1
 
-  xit "normalizes case", ->
+  it "normalizes case", ->
     words = new Words "go Go GO"
     expect(words.count).toEqual
       go: 3

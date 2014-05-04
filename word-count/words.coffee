@@ -1,7 +1,7 @@
 class Words
 
   constructor: (phrase) ->
-    cleaned = clean(phrase) #phrase.replace /[^a-zA-Z ]/g, ""
+    cleaned = clean(phrase)
     @count = countWords(cleaned)
 
   countWords = (phrase) ->
@@ -14,5 +14,6 @@ class Words
   clean = (phrase) ->
     cleaned = phrase.replace /[^0-9a-zA-Z ]/g, ""
     cleaned = cleaned.replace /\s{2,}/g, " "
+    cleaned = cleaned.toLowerCase()
 
 module.exports = Words
