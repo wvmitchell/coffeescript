@@ -13,7 +13,7 @@ describe "Words", ->
       of: 1
       each: 1
 
-  xit "counts multiple occurrences", ->
+  it "counts multiple occurrences", ->
     words = new Words "one fish two fish red fish blue fish"
     expect(words.count).toEqual
       one: 1
@@ -22,7 +22,7 @@ describe "Words", ->
       red: 1
       blue: 1
 
-  xit "ignores punctuation", ->
+  it "ignores punctuation", ->
     words = new Words "car : carpet as java : javascript!!&@$%^&"
     expect(words.count).toEqual
       car: 1
